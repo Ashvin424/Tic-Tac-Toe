@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tic Tac Toe"
+        android:textColor="#0E8F94"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/scoreCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:id="@+id/text_player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Player-1 "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/text_player1"
+            android:fontFamily="serif"
+            android:text="Player-2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/score_player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_player1"
+            android:fontFamily="serif"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/score_player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_player2"
+            android:layout_toRightOf="@id/score_player1"
+            android:fontFamily="serif"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreCard"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1.25dp"
+                android:fontFamily="serif"
+                android:textSize="34sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:textColor="#273920"
+        android:textColorLink="#200C77"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#A45555"
+        android:fontFamily="serif"
+        android:text="Play Again"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playAgain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#457433"
+        android:fontFamily="serif"
+        android:text="Restart"
+        app:cornerRadius="10dp" />
+</RelativeLayout>
